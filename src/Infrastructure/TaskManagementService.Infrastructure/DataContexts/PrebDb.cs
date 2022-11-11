@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace TaskManagementService.Infrastructure.DataContexts;
@@ -16,6 +15,6 @@ public static class PrebDb
 
     private static void UpdateDatabase(DataContext dataContext)
     {
-        dataContext.Database.Migrate();
+        dataContext.Database.EnsureCreated();
     }
 }

@@ -1,11 +1,10 @@
 # Task Management Service
 
-## Installation and configuration
+## Runnig the service.
 1. Clone the repository.
-2. Open the solution file in visual studio.
-3. Open Package Manager console.
-    - Select TaskManagementService.Infrastructure in Default project
-    - Run: Update-Database
-4. Run the TaskManagementService.Presentation.WebApi Project
+2. Navigate to src folder.
+3. Run: docker-compose up
+    
+4. Open the brwoser and navigate to http://localhost:5000/swagger/index.html
 ---
 

@@ -11,7 +11,7 @@ namespace TaskManagementService.Infrastructure
         {
             services.AddDbContext<DataContext>(options =>
             {
-                options.UseSqlServer("Server=localhost;User ID=sa;Password=1234;Database=TaskManagement;MultipleActiveResultSets=true;TrustServerCertificate=true");
+                options.UseSqlServer("Server=db;User ID=sa;Password=Aa@123456;Database=TaskManagement;MultipleActiveResultSets=true;TrustServerCertificate=true");
             });
             services.AddTransient<TaskRepository>();
 
