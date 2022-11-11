@@ -1,4 +1,5 @@
 using TaskManagementService.Infrastructure;
+using TaskManagementService.Infrastructure.DataContexts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+PrebDb.CreateDatabase(app);
 
 app.UseAuthorization();
 app.MapControllers();
