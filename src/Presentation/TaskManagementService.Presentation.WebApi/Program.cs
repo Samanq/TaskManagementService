@@ -20,6 +20,8 @@ PrebDb.CreateDatabase(app);
 
 app.UseSwagger();
 app.UseSwaggerUI();
+
+app.UseExceptionHandler("/error");
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
